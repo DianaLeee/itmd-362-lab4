@@ -192,6 +192,7 @@ img, audio, video {
 */
 
 html {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
   font-size: 1.375em; /* 22px */
   line-height: 1.182em; /* 26px / ~ 120% */
   padding: 1.182em; /* 26px / ~ 120% */
@@ -202,9 +203,56 @@ label {
   display: block;
 }
 
-/* ===== LAYOUT STYLES ====== */
+body {
+  text-align: center;
+}
 
+/* ===== LAYOUT STYLES ====== */
+h1 {
+  font-family: 'Modak', cursive;
+  font-size: 2.292em;
+}
+
+h1, p {
+  padding-bottom: 1.182em;
+}
+
+
+input {
+  width: 100%;
+  height: 2.292em;
+  box-sizing: border-box;
+  background-color: lightgrey;
+  border: 0;
+}
+
+label[for=email] {
+  text-align: left;
+}
+
+label[for=age-verification] {
+  text-align: left;
+}
+
+input[type=email] {
+  padding: 0.825em;
+}
+
+li {
+  padding-bottom: 0.825em;
+}
+
+input[type="checkbox"] {
+  width: inherit;
+  float: left;
+}
+
+input[type="checkbox"] + label {
+  display: inline;
+}
 /* ===== MODULAR STYLES ===== */
+form {
+  padding: 0.825em;
+}
 
 /* ===== STATE STYLES ======= */
-
