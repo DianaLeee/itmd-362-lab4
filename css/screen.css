@@ -196,6 +196,7 @@ html {
   font-size: 1.375em; /* 22px */
   line-height: 1.182em; /* 26px / ~ 120% */
   padding: 1.182em; /* 26px / ~ 120% */
+  /*text-rendering: optimizeLegibility;*/
 }
 
 label {
@@ -229,12 +230,12 @@ label[for=email] {
   text-align: left;
 }
 
-label[for=age-verification] {
-  text-align: left;
-}
-
 input[type=email] {
   padding: 0.825em;
+}
+
+label[for=age-verification] {
+  text-align: left;
 }
 
 li {
@@ -249,9 +250,21 @@ input[type="checkbox"] {
 input[type="checkbox"] + label {
   display: inline;
 }
+
+
+#input-submit {
+  padding-top: 1em;
+  position: relative;
+}
 /* ===== MODULAR STYLES ===== */
 form {
   padding: 0.825em;
 }
 
 /* ===== STATE STYLES ======= */
+@media screen and (min-width:0px) and (max-width:480px){
+  html {
+    font-size: 1em;
+    line-height: 1.182em;
+  }
+}
